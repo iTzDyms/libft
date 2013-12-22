@@ -6,10 +6,10 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 15:03:39 by npineau           #+#    #+#             */
-/*   Updated: 2013/12/15 11:59:41 by cheron           ###   ########.fr       */
+/*   Updated: 2013/12/22 21:28:11 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "hotrace.h"
+#include <libft.h>
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
