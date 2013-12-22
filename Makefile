@@ -6,7 +6,7 @@
 #    By: cheron <cheron@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 17:06:50 by cheron            #+#    #+#              #
-#    Updated: 2013/12/09 14:55:33 by cheron           ###   ########.fr        #
+#    Updated: 2013/12/22 21:32:17 by cheron           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -25,6 +25,7 @@ ft_strmapi.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
 ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c \
 ft_itoa.c ft_putendl.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 ft_putnbr_fd.c ft_strstr.c ft_strnstr.c ft_strncmp.c ft_strcmp.c ft_isspace.c \
+get_next_line.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -35,17 +36,17 @@ OFLAGS = -O3
 all: $(NAME)
 
 $(NAME): $(OBJ) $(INCLUDES_DIR)
-	@(ar -q $(NAME) $(OBJ))
+	ar -q $(NAME) $(OBJ)
 
 clean:
-	@($(RM) $(OBJ))
+	$(RM) $(OBJ)
 
 fclean: clean
-	@($(RM) $(NAME))
+	$(RM) $(NAME)
 
 re: fclean all
 
 %.o: %.c $(INCLUDES_DIR)
-	@($(CC) $(CFLAGS) $(OFLAGS) -I $(INCLUDES_DIR) -c $< -o $@)
+	$(CC) $(CFLAGS) $(OFLAGS) -I $(INCLUDES_DIR) -c $< -o $@
 
 .PHONY: all clean re fclean
