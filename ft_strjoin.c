@@ -3,29 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cheron <cheron@student.42.fr>              +#+  +:+       +#+        */
+/*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/22 17:58:53 by cheron            #+#    #+#             */
-/*   Updated: 2013/12/07 14:43:02 by cheron           ###   ########.fr       */
+/*   Created: 2013/11/28 15:03:39 by npineau           #+#    #+#             */
+/*   Updated: 2013/12/15 11:59:41 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "hotrace.h"
 
-#include <stdlib.h>
-#include "libft.h"
-
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
-	size_t	len1;
-	size_t	len2;
-	char	*s3;
+	char	*new;
+	int		len;
 
-	if (s1 == NULL || s2 == NULL)
+	if (!(s1 && s2))
 		return (NULL);
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-		if ((s3 = ft_strnew(len1 + len2 + 1)) == NULL)
+	len = ft_strlen(s1);
+	new = ft_strnew(len + ft_strlen(s2) + 1);
+	if (!new)
 		return (NULL);
-	ft_strncpy(s3, s1, len1);
-	ft_strncat(s3, s2, len2);
-	return (s3);
+	ft_strcpy(new, s1);
+	ft_strcpy(&new[len], s2);
+	return (new);
 }

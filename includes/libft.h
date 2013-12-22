@@ -6,7 +6,7 @@
 /*   By: cheron <cheron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 11:54:54 by cheron            #+#    #+#             */
-/*   Updated: 2013/12/09 13:34:17 by cheron           ###   ########.fr       */
+/*   Updated: 2013/12/19 16:33:13 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <string.h>
 
-typedef struct	s_list
+typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;

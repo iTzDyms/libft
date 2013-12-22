@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cheron <cheron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/22 18:05:57 by cheron            #+#    #+#             */
-/*   Updated: 2013/12/15 12:15:01 by cheron           ###   ########.fr       */
+/*   Created: 2013/12/02 16:18:14 by cheron            #+#    #+#             */
+/*   Updated: 2013/12/10 12:46:54 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include "hotrace.h"
 
-void	ft_putendl(char const *s)
-{
-	int	i;
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-	ft_putstr(s);
-	write(1, "\n", 1);
-}
+# define BUFF_SIZE 8
+
+char	*ft_join_free(char **line, char *buff);
+int		ft_buff_leftover(char *buff, char **line);
+int		ft_join_move(char **line, char *buff, char *next_line, int	nbread);
+int		ft_readfile(int const fd, char ** line, char *buff);
+int		get_next_line(int const fd, char ** line);
+
+#endif /* !GET_NEXT_LINE_H */
