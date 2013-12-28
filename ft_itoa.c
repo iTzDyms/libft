@@ -6,15 +6,15 @@
 /*   By: cheron <cheron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 18:04:43 by cheron            #+#    #+#             */
-/*   Updated: 2013/11/28 12:21:12 by cheron           ###   ########.fr       */
+/*   Updated: 2013/12/28 14:58:23 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_iterative_itoa(char	*str, size_t len, int n);
+static void	ft_iterative_itoa(char *str, size_t len, int n);
 
-static void	ft_iterative_itoa(char	*str, size_t len, int n)
+static void	ft_iterative_itoa(char *str, size_t len, int n)
 {
 	int	u;
 
