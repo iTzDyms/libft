@@ -6,7 +6,7 @@
 /*   By: cheron <cheron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/02 16:18:14 by cheron            #+#    #+#             */
-/*   Updated: 2013/12/10 12:46:54 by cheron           ###   ########.fr       */
+/*   Updated: 2013/12/29 20:10:10 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 char	*ft_join_free(char **line, char *buff);
 int		ft_buff_leftover(char *buff, char **line);
-int		ft_join_move(char **line, char *buff, char *next_line, int	nbread);
+int		ft_join_move(char **line, char *buff, char *next_line, int nbread);
 int		ft_readfile(int const fd, char ** line, char *buff);
 int		get_next_line(int const fd, char ** line);
 
