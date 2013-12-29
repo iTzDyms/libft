@@ -6,7 +6,7 @@
 #    By: cheron <cheron@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 17:06:50 by cheron            #+#    #+#              #
-#    Updated: 2013/12/22 21:32:17 by cheron           ###   ########.fr        #
+#    Updated: 2013/12/29 17:17:02 by cheron           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -25,7 +25,7 @@ ft_strmapi.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
 ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c \
 ft_itoa.c ft_putendl.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 ft_putnbr_fd.c ft_strstr.c ft_strnstr.c ft_strncmp.c ft_strcmp.c ft_isspace.c \
-get_next_line.c
+get_next_line.c ft_strfjoin.c ft_free_tab.c
 
 OBJ = $(SRC:.c=.o)
 
