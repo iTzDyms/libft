@@ -6,17 +6,17 @@
 #    By: cheron <cheron@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 17:06:50 by cheron            #+#    #+#              #
-#    Updated: 2014/02/21 14:30:07 by cheron           ###   ########.fr        #
+#    Updated: 2015/01/19 17:37:48 by cheron           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
-CC = gcc
-NAME = libft.a
-INCLUDES_DIR = includes/
-RM = @rm -rf
-AR = ar -crus
+CC := gcc
+NAME := libft.a
+INCLUDES_DIR := includes/
+RM := @rm -rf
+AR := ar -crus
 
-SRC = ft_memset.c ft_atoi.c ft_isalnum.c ft_isdigit.c ft_isascii.c \
+SRC := ft_memset.c ft_atoi.c ft_isalnum.c ft_isdigit.c ft_isascii.c \
 ft_isalpha.c ft_lstmap.c \
 ft_isprint.c ft_bzero.c  ft_memcpy.c ft_putchar.c ft_putnbr.c ft_putstr.c  \
 ft_memset.c ft_memccpy.c ft_memmove.c ft_memcmp.c ft_strcpy.c  ft_strlen.c \
@@ -29,14 +29,14 @@ ft_itoa.c ft_putendl.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 ft_putnbr_fd.c ft_strstr.c ft_strnstr.c ft_strncmp.c ft_strcmp.c ft_isspace.c \
 get_next_line.c ft_strfjoin.c ft_free_tab.c ft_fatal.c ft_count_char.c
 
-OBJ = $(SRC:.c=.o)
+OBJ := $(SRC:.c=.o)
 POBJ = $(addprefix $(OBJ_DIR)/, $(OBJ))
 
-SRC_DIR = srcs
-OBJ_DIR = obj
+SRC_DIR := srcs
+OBJ_DIR := obj
 
-CFLAGS = -Wall -Werror -Wextra
-OFLAGS = -O3
+CFLAGS := -Wall -Werror -Wextra
+OFLAGS := -O3
 
 
 all: $(OBJ_DIR) $(NAME)
