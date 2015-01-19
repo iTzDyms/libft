@@ -6,7 +6,7 @@
 #    By: cheron <cheron@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 17:06:50 by cheron            #+#    #+#              #
-#    Updated: 2015/01/19 17:37:48 by cheron           ###   ########.fr        #
+#    Updated: 2015/01/19 18:09:26 by cheron           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -51,7 +51,7 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	@echo "\nCleaning "$(NAME)"\n"
+	@echo "\nCleaning "$(NAME)
 
 re: fclean all
 
