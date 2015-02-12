@@ -6,7 +6,7 @@
 /*   By: cheron <cheron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/03 17:30:13 by cheron            #+#    #+#             */
-/*   Updated: 2015/02/12 14:28:01 by cheron           ###   ########.fr       */
+/*   Updated: 2015/02/12 14:55:35 by cheron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 void	ft_fatal(char *str)
 {
-	ft_putstr_fd(stri, 2);
+	ft_putstr_fd(str, 2);
 	exit(0);
 }
